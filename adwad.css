@@ -655,3 +655,22 @@ html .switcheroo__popper,html .switcheroo__popper-text{color:#fff !important;fon
 #modernbb .adwad-membre-liens a,#modernbb .adwad-pages a,#modernbb .pagination a{min-height:24px;display:inline-flex;align-items:center;justify-content:center}
 #modernbb .adwad-last-topic:empty,#modernbb .adwad-last-user:empty,#modernbb .adwad-desc:empty,#modernbb .adwad-subs:empty,#modernbb .adwad-last:empty{display:none}
 @media (prefers-reduced-motion:reduce){#modernbb *,#adwad-dock *,#adwad-notif-wrap *,#adwad-tools-wrap *,#adwad-a11y *,#adwad-scroll *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+/* ============================================================
+   RYTHME VERTICAL ET ALIGNEMENT
+   #main-content est une colonne flex : l'espacement se regle par
+   son gap, jamais par des marges sur les enfants.
+   ============================================================ */
+:root{--adwad-gap:24px}
+body.adwad-index{--adwad-gap:40px}
+#modernbb #main-content > *{margin-top:0;margin-bottom:0}
+#modernbb #main-content > br,#modernbb #main-content > .clear{display:none}
+#modernbb #main-content > .page-title + .panel,#modernbb #main-content > .page-title + .forumbg,#modernbb #main-content > .page-title + .block,#modernbb #main-content > .page-title + form,#modernbb #main-content > .page-title + table{margin-top:calc(var(--adwad-gap) * -1)}
+#modernbb .adwad-pagination-row:has(.pagination:empty){display:none}
+#modernbb .quick-nav-topics{margin:0}
+#modernbb ul#privmsgs-menu{margin:0}
+#modernbb .pm-actions{margin:0}
+#modernbb #main-content > p.right,#modernbb #main-content > p.rightside{margin-right:0;padding-right:0;text-align:right;font:400 11px/1.5 var(--adwad-font-body);color:var(--adwad-text-muted)}
+#modernbb .adwad-connectes{font:400 12px/1.6 var(--adwad-font-body);color:var(--adwad-text-muted)}
+#modernbb .adwad-connectes br{display:none}
+#modernbb .adwad-connectes a{color:var(--adwad-text-bright)}
