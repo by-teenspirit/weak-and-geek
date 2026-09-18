@@ -681,3 +681,8 @@ body.adwad-index{--adwad-gap:40px}
 #modernbb ul#privmsgs-menu li i{display:none !important}
 #modernbb ul#privmsgs-menu li a{display:block;margin-top:0 !important;padding:9px 12px !important;line-height:1.3 !important}
 #modernbb ul#privmsgs-menu li:not(:has(a)){padding:9px 12px}
+
+/* --- Derniers details --- */
+#modernbb #main-content > noscript{display:none}
+#modernbb #main-content img{background-color:transparent}
+#modernbb .adwad-membre-avatar,#modernbb .adwad-avatar,#modernbb .adwad-topic-avatar{background-color:rgba(255,255,255,.1)}
