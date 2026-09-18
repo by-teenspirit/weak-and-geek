@@ -695,3 +695,8 @@ body.adwad-index{--adwad-gap:40px}
 }
 /* Un cadre d avatar sans image ne doit pas laisser un rectangle vide */
 #modernbb .adwad-row dd.lastpost.adwad-avatar:not(:has(img)),#modernbb dd.views.adwad-topic-avatar:not(:has(img)){visibility:hidden}
+
+/* --- Divers --- */
+#modernbb #main-content > noscript{display:none}
+#modernbb #main-content img{background-color:transparent}
+#modernbb .adwad-membre-avatar,#modernbb .adwad-avatar,#modernbb .adwad-topic-avatar{background-color:rgba(255,255,255,.1)}
