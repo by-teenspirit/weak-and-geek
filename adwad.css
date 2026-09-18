@@ -742,3 +742,7 @@ body.adwad-index{--adwad-gap:40px}
 #modernbb .adwad-topic .topic-author{display:block;line-height:1.15}
 #modernbb .adwad-topic-counts span,#modernbb .adwad-topic-last span{line-height:1.15;display:block}
 #modernbb .adwad-topics li.header dt,#modernbb .adwad-topics li.header dd.dterm{line-height:1.15}
+
+/* Rythme interne de la page forum : 16px dans le bloc, 40px entre les blocs (maquette) */
+#modernbb #main-content:has(.adwad-forum-bloc){row-gap:40px}
+#modernbb .adwad-forum-bloc{display:flex;flex-direction:column;gap:16px}
