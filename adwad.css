@@ -793,3 +793,6 @@ body.adwad-index{--adwad-gap:40px}
 #modernbb .adwad-membre-messages{font:700 12px/1.2 var(--adwad-font-body)}
 #modernbb .adwad-membre-liens{display:flex;gap:6px;justify-content:center;width:100%}
 #modernbb .adwad-membres{padding:0;background:none;border-radius:0}
+/* H4 (22px/1.1) pour tous les titres de page, comme les jetons de la maquette */
+#modernbb h1.page-title,#modernbb .page-title{font-size:22px;letter-spacing:1.1px}
+#modernbb .sub-header-path .page-title{font-size:22px;letter-spacing:1.1px}
