@@ -746,3 +746,15 @@ body.adwad-index{--adwad-gap:40px}
 /* Rythme interne de la page forum : 16px dans le bloc, 40px entre les blocs (maquette) */
 #modernbb #main-content:has(.adwad-forum-bloc){row-gap:40px}
 #modernbb .adwad-forum-bloc{display:flex;flex-direction:column;gap:16px}
+
+/* ============================================================
+   ALIGNEMENT SUR LA MAQUETTE 3569:30975 (affichage d un sujet)
+   Le titre passe en 26px/1.3 (style H3 de la maquette).
+   Forumactif injecte color:#444 en style inline sur les libelles
+   du profil : illisible sur fond sombre, on le neutralise.
+   ============================================================ */
+#modernbb .adwad-sujet-titre{font:700 26px/1.15 var(--adwad-font-body);letter-spacing:1.3px}
+#modernbb .postprofile-avatar,#modernbb .postprofile-avatar img{border-radius:8px}
+#modernbb .postprofile-info .label,#modernbb .postprofile-info .label span,#modernbb .postprofile-info span[style*="color"]{color:var(--adwad-text-muted) !important}
+#modernbb .postbody{padding:24px;display:flex;flex-direction:column;gap:16px}
+#modernbb .post .post-head{padding:24px 24px 0}
