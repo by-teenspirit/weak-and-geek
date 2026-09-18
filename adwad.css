@@ -596,3 +596,10 @@ body.adwad-index #modernbb #main-content,body#modernbb.adwad-index #main-content
 
 #modernbb #cp-main h1{display:none}
 #modernbb #profile-advanced-right .module>.h3 .usr_grp_clr{display:block}
+
+/* ===== Correctifs responsive : barre de navigation ===== */
+@media (max-width:1100px){
+#modernbb #headerbar-top.responsive-headerbar>.wrap{min-width:0}
+#modernbb ul#modernbb-nav-menu.navbar{min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none}
+#modernbb ul#modernbb-nav-menu.navbar::-webkit-scrollbar{display:none}
+}
