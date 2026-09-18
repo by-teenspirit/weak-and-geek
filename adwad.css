@@ -674,3 +674,10 @@ body.adwad-index{--adwad-gap:40px}
 #modernbb .adwad-connectes{font:400 12px/1.6 var(--adwad-font-body);color:var(--adwad-text-muted)}
 #modernbb .adwad-connectes br{display:none}
 #modernbb .adwad-connectes a{color:var(--adwad-text-bright)}
+
+/* --- Messagerie : ModernBB impose des onglets de 88px avec une pastille ronde.
+   On revient aux memes pastilles de texte que partout ailleurs. --- */
+#modernbb ul#privmsgs-menu li{height:auto !important;min-height:0 !important;text-align:left}
+#modernbb ul#privmsgs-menu li i{display:none !important}
+#modernbb ul#privmsgs-menu li a{display:block;margin-top:0 !important;padding:9px 12px !important;line-height:1.3 !important}
+#modernbb ul#privmsgs-menu li:not(:has(a)){padding:9px 12px}
