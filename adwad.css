@@ -758,3 +758,38 @@ body.adwad-index{--adwad-gap:40px}
 #modernbb .postprofile-info .label,#modernbb .postprofile-info .label span,#modernbb .postprofile-info span[style*="color"]{color:var(--adwad-text-muted) !important}
 #modernbb .postbody{padding:24px;display:flex;flex-direction:column;gap:16px}
 #modernbb .post .post-head{padding:24px 24px 0}
+
+/* ============================================================
+   PROFIL ET LISTE DES MEMBRES
+   Maquettes 3569:30843 (profil) et 3569:30917 (membres).
+   ============================================================ */
+#modernbb .adwad-profil-avance{border-radius:0 0 var(--adwad-radius-lg) var(--adwad-radius-lg);padding:24px;gap:32px}
+/* Colonne gauche : nom, rang, avatar, puis lien de contact */
+#modernbb #profile-advanced-right .module{display:flex;flex-direction:column;gap:10px;align-items:center}
+#modernbb #profile-advanced-right .module>.h3{order:1}
+#modernbb #profile-advanced-right .mod-login-rank{order:2;margin:0;font:700 12px/1.15 var(--adwad-font-body);letter-spacing:0;text-transform:uppercase;color:var(--adwad-text-muted);text-align:center}
+#modernbb #profile-advanced-right .mod-login-rank br{display:none}
+#modernbb #profile-advanced-right .mod-login-avatar{order:3;margin:0;padding:6px;border-radius:var(--adwad-radius-xs)}
+#modernbb #profile-advanced-right .mod-login-avatar img{border-radius:8px}
+/* Les libelles de champ portent un color:#444 en style inline */
+#modernbb #profile-advanced-details dt span[style*="color"],#modernbb #profile-advanced-details dt span{color:var(--adwad-text-bright) !important}
+#modernbb #cp-main .middleline,#modernbb #profile-tab-field-profil{background:#454545;border-radius:var(--adwad-radius-md);padding:10px}
+#modernbb #profile-advanced-right .module>.h3{font-size:40px;letter-spacing:-3.6px;text-align:center;line-height:1.15;padding:0;margin:0}
+#modernbb #profile-advanced-right .module>.h3 em{display:block;font:700 10px/1.3 var(--adwad-font-body);font-style:normal;letter-spacing:.6px;text-transform:uppercase;color:var(--adwad-text-muted)}
+#modernbb #profile-tab-field-profil{background:none;border-radius:0;padding:0}
+/* Titre de page : H4 partout, H3 uniquement sur l affichage d un sujet */
+#modernbb .adwad-sujet-titre{font:700 22px/1.15 var(--adwad-font-body);letter-spacing:1.1px}
+#modernbb #main-content:has(.post) .adwad-sujet-titre{font-size:26px;letter-spacing:1.3px}
+/* Liste des membres : grille de fiches verticales (maquette 3569:30917) */
+#modernbb .adwad-membres-grille{display:flex;flex-wrap:wrap;align-content:flex-start;gap:32px;padding:24px;width:100%;background:var(--adwad-row);border-radius:0 0 var(--adwad-radius-lg) var(--adwad-radius-lg)}
+#modernbb .adwad-membre{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;width:159px;flex:0 0 auto;background:none;padding:0;border:0}
+#modernbb .adwad-membre-avatar{display:flex;align-items:center;justify-content:center;width:159px;height:159px;padding:10px;background:rgba(255,255,255,.1);border-radius:var(--adwad-radius-md);overflow:hidden;flex:0 0 auto}
+#modernbb .adwad-membre-avatar img{width:100%;height:100%;object-fit:cover;border-radius:var(--adwad-radius-md);display:block}
+#modernbb .adwad-membre-infos{display:flex;flex-direction:column;gap:10px;width:100%;align-items:stretch}
+#modernbb .adwad-membre-nom,#modernbb .adwad-membre-nom span,#modernbb .adwad-membre-nom strong{font:italic 700 20px/1.15 var(--adwad-font-title) !important;text-transform:lowercase;letter-spacing:-1.8px;color:var(--adwad-text-dim) !important;text-align:center;text-decoration:none;display:block}
+#modernbb .adwad-membre-nom:hover,#modernbb .adwad-membre-nom:hover span{color:var(--adwad-text-bright) !important}
+#modernbb .adwad-membre-date,#modernbb .adwad-membre-messages{display:flex;align-items:center;justify-content:center;width:100%;padding:4px 8px;background:var(--adwad-pill);border-radius:var(--adwad-radius-xs);color:var(--adwad-text);text-align:center}
+#modernbb .adwad-membre-date{font:400 12px/1.2 var(--adwad-font-body)}
+#modernbb .adwad-membre-messages{font:700 12px/1.2 var(--adwad-font-body)}
+#modernbb .adwad-membre-liens{display:flex;gap:6px;justify-content:center;width:100%}
+#modernbb .adwad-membres{padding:0;background:none;border-radius:0}
