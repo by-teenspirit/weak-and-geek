@@ -700,3 +700,45 @@ body.adwad-index{--adwad-gap:40px}
 #modernbb #main-content > noscript{display:none}
 #modernbb #main-content img{background-color:transparent}
 #modernbb .adwad-membre-avatar,#modernbb .adwad-avatar,#modernbb .adwad-topic-avatar{background-color:rgba(255,255,255,.1)}
+
+/* ============================================================
+   ALIGNEMENT SUR LA MAQUETTE 3569:30807
+   Valeurs relevees directement dans Figma (bloc 3569:30823).
+   Les rayons reviennent aux valeurs de la maquette : 4px et 10px.
+   ============================================================ */
+:root{--adwad-radius-xs:4px;--adwad-radius-md:10px}
+#modernbb .adwad-bar{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;row-gap:8px;flex-wrap:wrap}
+#modernbb .adwad-new{font:italic 700 20px/1.15 var(--adwad-font-title);text-transform:lowercase;letter-spacing:-1.8px;color:var(--adwad-text-dim);text-decoration:none}
+#modernbb .adwad-new:hover{color:var(--adwad-text-bright)}
+#modernbb .adwad-breadcrumb{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+#modernbb .adwad-breadcrumb a,#modernbb .adwad-breadcrumb a.nav{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;background:var(--adwad-nav);border-radius:var(--adwad-radius-xs);font:700 10px/1 var(--adwad-font-body);letter-spacing:0;text-transform:uppercase;color:var(--adwad-text);text-decoration:none}
+#modernbb .adwad-breadcrumb a:hover{background:rgba(255,255,255,.2);color:var(--adwad-text-bright)}
+#modernbb .adwad-breadcrumb .adwad-sep{font-size:20px;line-height:1;color:var(--adwad-text-muted)}
+#modernbb button.adwad-plus-toggle{display:inline-flex;align-items:center;border:0;cursor:pointer;padding:4px 8px;background:var(--adwad-nav);border-radius:var(--adwad-radius-xs);font:700 10px/1 var(--adwad-font-body);letter-spacing:0;text-transform:uppercase;color:var(--adwad-text)}
+#modernbb button.adwad-plus-toggle:hover{background:rgba(255,255,255,.2);color:var(--adwad-text-bright)}
+#modernbb .adwad-plus-panneau{display:flex;flex-direction:column;gap:16px}
+#modernbb .adwad-plus-panneau[hidden]{display:none}
+#modernbb .adwad-topics li.header{background:var(--adwad-cat-head);border-radius:var(--adwad-radius-sm) var(--adwad-radius-sm) 0 0;padding:14px 10px}
+#modernbb .adwad-topics li.header dt,#modernbb .adwad-topics li.header dd.dterm{font:700 22px/1 var(--adwad-font-body);letter-spacing:1.1px;text-transform:uppercase;color:var(--adwad-text-bright);text-align:center}
+#modernbb .adwad-topics li.row.adwad-topic{background:var(--adwad-row);border-bottom:1px solid #484848;border-radius:0;margin:0}
+#modernbb .adwad-topics li.row.adwad-topic:last-child{border-bottom:0;border-radius:0 0 var(--adwad-radius-md) var(--adwad-radius-md)}
+#modernbb .adwad-topic dl.icon{display:flex;align-items:center;gap:32px;padding:16px}
+#modernbb .adwad-topic dd.dterm{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:3px;align-items:flex-start}
+#modernbb .adwad-topic .topic-title-container{line-height:1.15}
+#modernbb .adwad-topic a.topictitle{font:700 14px/1.15 var(--adwad-font-body);letter-spacing:0;text-transform:none;color:#fff}
+#modernbb .adwad-topic .topic-author{font:400 14px/1.15 var(--adwad-font-body);color:var(--adwad-text-muted)}
+#modernbb .adwad-topic .topic-author a,#modernbb .adwad-topic .topic-author strong,#modernbb .adwad-topic .topic-author span{font:700 14px/1.15 var(--adwad-font-body);color:var(--adwad-text-muted) !important}
+#modernbb .adwad-topic-counts{flex:0 0 auto;font:400 14px/1.15 var(--adwad-font-body);color:var(--adwad-text-muted)}
+#modernbb .adwad-topic-counts b{font-weight:400}
+#modernbb .adwad-topic-avatar{flex:0 0 35px}
+#modernbb .adwad-topic-last{flex:0 0 auto;padding:0 !important;font:400 14px/1.15 var(--adwad-font-body);color:var(--adwad-text-muted)}
+#modernbb .adwad-topic-user{font-weight:700}
+#modernbb .adwad-pages{display:flex;gap:5px;padding:4px 0}
+#modernbb .adwad-pages:empty{display:none}
+#modernbb .adwad-pages a,#modernbb .adwad-pages span{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:#444;border-radius:var(--adwad-radius-xs);font:700 12px/1 var(--adwad-font-body);color:var(--adwad-text);text-decoration:none}
+#modernbb .adwad-topics li.header{padding:14px 10px !important;min-height:0;height:auto}
+#modernbb .adwad-topics li.header dl.icon,#modernbb .adwad-topics li.header dl{padding:0;margin:0;min-height:0;height:auto;display:block}
+#modernbb .adwad-topic .topic-title-container,#modernbb .adwad-topic h2.topic-title{margin:0;padding:0;line-height:1.15;font-size:14px}
+#modernbb .adwad-topic .topic-author{display:block;line-height:1.15}
+#modernbb .adwad-topic-counts span,#modernbb .adwad-topic-last span{line-height:1.15;display:block}
+#modernbb .adwad-topics li.header dt,#modernbb .adwad-topics li.header dd.dterm{line-height:1.15}
